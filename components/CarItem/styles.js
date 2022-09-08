@@ -24,6 +24,14 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
     position: "absolute",
   },
+  buttonContainer:{
+    position:'absolute',
+    width:'100%',
+    bottom:40
+},
+taglineCTA:{
+    textDecorationLine:'underline'
+}
 });
 
 export default styles;
