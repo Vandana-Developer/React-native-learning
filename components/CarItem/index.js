@@ -4,13 +4,14 @@ import { StatusBar } from "expo-status-bar";
 import styles from "./styles";
 import { StyledButton } from "../StyledButton";
 
-export default function CarItem({ title, tagline, image, taglineCTA }) {
+export default function CarItem({cars}) {
+    const { name, tagline, image, taglineCTA } =cars
   return (
     <View style={styles.carContainer}>
       <ImageBackground source={image} style={styles.image} />
       <View style={styles.titles}>
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.subTitle}>
+        <Text style={styles.title}>{name}</Text>
+        <Text style={styles.subtitle}>
           {tagline} {' '}<Text style={styles.taglineCTA}>{taglineCTA}</Text>
         </Text>
       </View>
